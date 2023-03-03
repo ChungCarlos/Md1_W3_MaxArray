@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Max Array</title>
+</head>
+<body>
+<script>
+    let array = [-3, 5, 1, 3, 2, 10];
+    let max = array[0];
+    // let index = 0;
+    // // for (let i=1;i<array.length;i++) {
+    // //     if (array[i] > max) {
+    // //         max = array[i];
+    // //         index = i;
+    // //     }
+    // // }
+    // // document.write(max + ' is  max');
+// sắp xếp dãy array theo thứ tự giảm dần ta sẽ xác định được max của array
+    array.sort(function (a, b) {
+        return b - a;
+    })
+    document.write(" Max is " + array[0]);
+</script>
+</body>
+</html>
